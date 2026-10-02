@@ -45,4 +45,28 @@ func main(){ //only 1 main function --> an entry point of the program
 	const pi3 = 3.141592653589793238462643383279502884197169399375105820974944592307816406286208998628034825342117067982148086513282306647093844609550582231725359408128481117450284102701938521105559644622948954930381964428810975665933446128475648233786783165271201909145648566923460348610454326648213393607260249141273724587006606315588174881520920962829254091715364367892590360011330530548820466521384146951941511
 
 
+
+	//Printing & Formatting Strings
+	firstName := "Shraddha"
+	lastName := "Dongol"
+	fmt.Printf("Hello my first name is %s and \n last name is %s", firstName, lastName)
+
+	//format specifiers: %s for string, %d for integer, %f for float, %t for boolean, %v for any value
+	age := 24
+	fmt.Printf("\n I am %v %d years old", age)
+
+	//type of variables
+	fmt.Printf("\n the typeof age is %T", age);
+	fmt.Printf("\n the typeof price is %T", price);
+	fmt.Printf("\n the typeof isActive is %T", isActive)
+
+	fmt.Printf("\n You score %f points", 12.2565465469)
+	fmt.Printf("\n You score %0.1f points \n", 12.2565465469)
+	// ------- Println doesnt format the string, it just prints the values as they are ------
+	//fmt.Println("\n You score %f points", 12.2565465469) ----> PRINTS : You score %f points 12.2565465469
+
+
+	//Sprintf() function returns a formatted string without printing it to the console
+	formattedString := fmt.Sprintf("Save the formatted string to a variable: %d", age)
+	fmt.Println(formattedString)
 }
