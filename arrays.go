@@ -35,4 +35,10 @@ func main(){
 	fmt.Println("Range Two : ",rangeTwo, " and length of rangeTwo : ",len(rangeTwo))
 	rangeThree := names[:3] //slice from the beginning of the array to index 2 (3-1), includes index 0,1,2 not 3
 	fmt.Println("Range Three : ",rangeThree, " and length of rangeThree : ",len(rangeThree))
+
+
+	//Difference between arrays and slices
+	//1. Arrays have a fixed size, while slices are dynamic in size.
+	//2. Arrays are value types, while slices are reference types.
+	//3. Arrays are less flexible and powerful than slices.
 }
